@@ -55,3 +55,7 @@
         font-size: 1.6rem;
     }
 }
+
+.ghost-portal-root {
+    display: none;
+}

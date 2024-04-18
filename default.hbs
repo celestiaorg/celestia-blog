@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<html lang="{{@site.locale}}"{{#match @custom.color_scheme "Dark"}} class="dark-mode"{{/match}}{{#match @custom.color_scheme "Auto"}} class="auto-color"{{/match}}>
 <head>
 
     <meta charset="utf-8" />
@@ -9,71 +9,71 @@
 
     <title>{{meta_title}}</title>
 
+    <style>
+        :root {
+            {{#if @custom.header_button_background}}
+            --button-bg-color: {{@custom.header_button_background}};
+            {{/if}}
+            --button-text-color: {{#match @custom.header_button_text_color "Light"}}#fff{{else}}var(--color-darkgrey){{/match}};
+        }
+    </style>
+
     {{ghost_head}}
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
 
 </head>
-<body class="{{body_class}}">
-<div class="gh-viewport">
+<body class="{{body_class}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Modern sans-serif"}} has-sans-body{{/match}}">
+<div class="viewport">
 
-<header id="gh-head" class="gh-head">
-    <nav class="gh-head-inner gh-container">
-
-        <div class="gh-head-brand">
-            <a class="gh-head-logo" href="{{@site.url}}">
-                {{#if @site.logo}}
-                    <img src="{{@site.logo}}" alt="{{@site.title}}" />
-                {{else}}
-                    {{@site.title}}
-                {{/if}}
-            </a>
-            <a class="gh-burger" role="button" aria-label="menu">
-                <div class="gh-burger-box">
-                    <div class="gh-burger-inner"></div>
-                </div>
-            </a>
-        </div>
-        <div class="gh-head-menu">
-            {{navigation}}
-        </div>
-        <div class="gh-head-actions">
-            <div class="gh-head-actions-list">
-                {{search}}
-                {{#if @site.members_enabled}}
-                    {{^if @member}}
-                    <a class="gh-button" href="{{@site.signup_url}}">Subscribe</a>
+    <header id="gh-head" class="gh-head{{#match @custom.publication_cover_style "!=" "None"}} has-cover{{/match}}">
+        <nav class="gh-head-inner inner gh-container">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo" href="{{@site.url}}">
+                    {{#if @site.logo}}
+                        <img src="{{@site.logo}}" alt="{{@site.title}}" />
                     {{else}}
-                    <a class="gh-button" href="#/portal/account">Account</a>
+                        {{@site.title}}
                     {{/if}}
-                {{/if}}
+                </a>
+                <a class="gh-burger" role="button" aria-label="menu">
+                    <div class="gh-burger-box">
+                        <div class="gh-burger-inner"></div>
+                    </div>
+                </a>
             </div>
-        </div>
-    </nav>
-</header>
+            <div class="gh-head-menu">
+                {{navigation}}
+            </div>
+            <div class="gh-head-actions">
+                {{#unless @member}}
+                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                {{else}}
+                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
+                {{/unless}}
+            </div>
+        </nav>
+    </header>
 
-<main class="gh-main">
-
+<div class="site-content">
+    {{!-- All other templates get inserted here, index.hbs, post.hbs, etc --}}
     {{{body}}}
-    {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
+</div>
 
-</main>
-
-<footer class="gh-foot">
-    <div class="gh-container">
-        <div class="gh-foot-menu">
-            {{navigation type="secondary"}}
+   <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="{{@site.url}}">{{@site.title}}</a> &copy; {{date format="YYYY"}}</section>
+            <nav class="site-footer-nav">
+                {{navigation type="secondary"}}
+            </nav>
+            <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>
         </div>
-        <div class="gh-foot-meta">
-            Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </div>
 
 {{!-- <foot> --}}
 {{ghost_foot}}
-{{!-- Outputs important scripts - should always be included before closing body tag --}}
+{{!-- Outputs important scripts - should always be included before closing body tag --}}    
 
 </body>
 </html>

@@ -2,9 +2,18 @@
 which templates loop over to generate a list of posts. --}}
 
 {{#if featured}}
-    {{!-- Skip rendering this post if it is featured --}}
-{{else}}
-<article class="post-card {{post_class}}">
+<article class="post-card {{post_class}} 
+    {{#if featured }}
+        {{#is "home, paged"}}
+            {{#if featured }}
+                {{#is "home"}}
+                    {{#if feature_image}}post-card-large{{/if}}
+                {{/is}}
+            {{else}}
+                post-card-large
+            {{/if}}
+        {{/is}}
+    {{/if}}">
 
     {{#if feature_image}}
     <a class="post-card-image-link" href="{{url}}">
@@ -63,3 +72,4 @@ which templates loop over to generate a list of posts. --}}
 
 </article>
 {{/if}}
+

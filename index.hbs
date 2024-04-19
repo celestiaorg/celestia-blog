@@ -30,8 +30,19 @@
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
+        <h2 class="post-featured-title"> Featured </h2>
+         <div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}} post-feed-featured">
+            
+            {{#foreach posts}}
+
+                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                {{> "post-card-featured"}}
+
+            {{/foreach}}
+        </div>
 
         <div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}}">
+
             {{#foreach posts}}
 
                 {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}

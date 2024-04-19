@@ -11,7 +11,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* ---------------------------------------------------------- */
 
 /* Base components */
-@import "components/fonts.css";
+/* @import "components/fonts.css"; */
 @import "vars.css";
 @import "components/global.css";
 @import "components/forms.css";
@@ -39,10 +39,9 @@ html,
     background: #ffffff;
 }
 
-.gh-main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+.site-main {
+    position: relative;
+    z-index: 1;
 }
 
 .gh-page {
@@ -336,15 +335,15 @@ html,
 }
 
 .site-title {
-    font-size: 6.875rem;
-    font-weight: 600;
+    font-size: 110px;
+    font-weight: 500;
     z-index: 10;
-    margin: 0 0 0.15em;
+    margin: 0;
     padding: 0;
 }
 @media (max-width: 600px) {
     .site-title {
-        font-size: 4.875rem;
+        font-size: 80px;
     }
 }
 
@@ -422,6 +421,7 @@ html,
     #gh-head {
         transition: all 0.4s ease-out;
         overflow: hidden;
+        z-index: 1;
     }
     #gh-head .gh-head-inner {
         height: 100%;
@@ -537,6 +537,18 @@ html,
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.post-featured-title {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.post-feed-featured {
+    margin-bottom: 119px;
+}
+
 .post-feed.list {
     row-gap: 6vmin;
     max-width: 940px;
@@ -575,7 +587,7 @@ html,
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .post-card-image {

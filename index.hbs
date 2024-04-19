@@ -19,8 +19,10 @@
                 <h1 class="site-title">{{@site.title}}</h1>
         {{/if}}
 
-        {{#if @site.description}}
-            <p>{{@site.description}}</p>
+        {{#if @custom.show_description_text}}
+            {{#if @site.description}}
+                <p>{{@site.description}}</p>
+            {{/if}}
         {{/if}}
     </div>
 {{/match}}

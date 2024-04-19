@@ -118,6 +118,12 @@
                 "default": "Dynamic grid",
                 "group": "homepage"
             },
+            "show_description_text": {
+                "type": "boolean",
+                "default": false,
+                "group": "homepage",
+                "description": "Toggle to show the site description text on the homepage hero section"
+            },
             "color_scheme": {
                 "type": "select",
                 "options": [

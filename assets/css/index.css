@@ -69,13 +69,6 @@ html,
     margin: 0 auto;
 }
 
-.gh-head-actions a:not(.gh-button) {
-    display: inline-flex;
-    align-items: center;
-    margin: 0;
-    padding: 10px;
-}
-
 .gh-head-actions a svg {
     height: 1.8rem;
     fill: currentcolor;
@@ -316,9 +309,16 @@ html,
 }
 
 .site-title {
+    font-size: 6.875rem;
+    font-weight: 600;
     z-index: 10;
     margin: 0 0 0.15em;
     padding: 0;
+}
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 4.875rem;
+    }
 }
 
 .site-logo {

@@ -11,10 +11,10 @@
 
     <style>
         :root {
-            {{#if @custom.header_button_background}}
-            --button-bg-color: {{@custom.header_button_background}};
+            {{#if @custom.header_cta_style}}
+            --button-bg-color: {{#match @custom.header_cta_style "Dark"}}var(--color-darkgrey){{else}}#fff{{/match}};
             {{/if}}
-            --button-text-color: {{#match @custom.header_button_text_color "Light"}}#fff{{else}}var(--color-darkgrey){{/match}};
+            --button-text-color: {{#match @custom.header_cta_style "Dark"}}#fff{{else}}var(--color-darkgrey){{/match}};
         }
     </style>
 
@@ -45,11 +45,15 @@
                 {{navigation}}
             </div>
             <div class="gh-head-actions">
-                {{#unless @member}}
-                    <a class="gh-head-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
-                {{else}}
-                    <a class="gh-head-button" href="#/portal/account" data-portal="account">Account</a>
-                {{/unless}}
+                {{#if @custom.header_cta_link}}
+                    <a class="gh-head-button" href="{{@custom.header_cta_link}}" target="_blank" rel="noopener">
+                        {{#if @custom.header_cta_link}}
+                        {{@custom.header_cta_text}}
+                        {{else}}
+                            Button
+                        {{/if}}
+                    </a>
+                {{/if}}
             </div>
         </nav>
     </header>

@@ -127,18 +127,6 @@
                 ],
                 "default": "Light"
             },
-            "header_button_background": {
-                "type": "color",
-                "default": "#ffffff"
-            },
-            "header_button_text_color": {
-                "type": "select",
-                "options": [
-                    "Light",
-                    "Dark"
-                ],
-                "default": "Dark"
-            },
             "post_image_width": {
                 "type": "select",
                 "options": [
@@ -168,6 +156,25 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "header_cta_text": {
+                "type": "text",
+                "default": "Website",
+                "description": "Sets the CTA button text in the header"
+            },
+            "header_cta_link": {
+                "type": "text",
+                "default": "https://celestia.org/",
+                "description": "Sets the CTA button link in the header"
+            },
+            "header_cta_style": {
+                "type": "select",
+                "options": [
+                    "Light",
+                    "Dark"
+                ],
+                "default": "Dark",
+                "description": "Sets the CTA button style in the header"
             }
         }
     },

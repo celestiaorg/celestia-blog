@@ -136,9 +136,9 @@
 
 a.gh-head-button {
     display: block;
-    padding: 8px 15px;
+    padding: 16px 32px;
     color: var(--button-text-color, var(--color-darkgrey));
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: -0.015em;
     font-size: 1.5rem;
     line-height: 1em;

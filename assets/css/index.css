@@ -11,6 +11,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* ---------------------------------------------------------- */
 
 /* Base components */
+@import "components/fonts.css";
 @import "vars.css";
 @import "components/global.css";
 @import "components/forms.css";
@@ -643,7 +644,7 @@ html,
 }
 
 .has-sans-body .post-card-excerpt {
-    font-family: var(--font-sans-serif);
+    font-family: var(--inter);
 }
 
 .post-card-excerpt p {

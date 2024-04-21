@@ -108,16 +108,6 @@
                 "default": "Medium",
                 "group": "homepage"
             },
-            "feed_layout": {
-                "type": "select",
-                "options": [
-                    "Dynamic grid",
-                    "Simple grid",
-                    "List"
-                ],
-                "default": "Dynamic grid",
-                "group": "homepage"
-            },
             "show_description_text": {
                 "type": "boolean",
                 "default": false,

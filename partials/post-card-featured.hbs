@@ -1,7 +1,6 @@
 {{!-- This is a partial file used to generate a post "card"
 which templates loop over to generate a list of posts. --}}
 
-{{#if featured}}
 <article class="post-card {{post_class}} 
     {{#if featured }}
         {{#is "home, paged"}}
@@ -49,19 +48,6 @@ which templates loop over to generate a list of posts. --}}
         </a>
 
         <footer class="post-card-meta">
-            <ul class="author-list">
-                {{#foreach authors}}
-                <li class="author-list-item">
-                    {{#if profile_image}}
-                    <a href="{{url}}" class="static-avatar">
-                        <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy" />
-                    </a>
-                    {{else}}
-                    <a href="{{url}}" class="static-avatar author-profile-image">{{> "icons/avatar"}}</a>
-                    {{/if}}
-                </li>
-                {{/foreach}}
-            </ul>
             <div class="post-card-byline-content">
                 <span class="post-card-byline-author">{{#has author="count:>2"}}Multiple authors{{else}}{{authors}}{{/has}}</span>
                 <span class="post-card-byline-date"><time datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time> <span class="bull">&bull;</span> {{reading_time}}</span>
@@ -71,5 +57,4 @@ which templates loop over to generate a list of posts. --}}
     </div>{{!--/.post-card-content--}}
 
 </article>
-{{/if}}
 

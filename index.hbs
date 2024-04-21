@@ -1,55 +1,82 @@
 {{!< default}}
-{{#match @custom.publication_cover_style "!=" "None"}}
-    <div class="site-header-content{{#match @custom.publication_cover_style "Large"}} large{{/match}}">
-        {{#if @site.cover_image}}
-            {{!-- This is a responsive image, it loads different sizes depending on device
-            https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-            <img class="site-header-cover"
-                srcset="{{img_url @site.cover_image size="s"}} 300w,
-                        {{img_url @site.cover_image size="m"}} 600w,
-                        {{img_url @site.cover_image size="l"}} 1000w,
-                        {{img_url @site.cover_image size="xl"}} 2000w"
-                sizes="100vw"
-                src="{{img_url @site.cover_image size="xl"}}"
-                alt=""
-            />
-        {{/if}}
-
-        {{#if @site.title}}
-                <h1 class="site-title">{{@site.title}}</h1>
-        {{/if}}
-
-        {{#if @custom.show_description_text}}
-            {{#if @site.description}}
-                <p>{{@site.description}}</p>
-            {{/if}}
-        {{/if}}
-    </div>
-{{/match}}
 
 {{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
+<main id="site-main" class="site-main index-page outer">
+
+    {{#match @custom.publication_cover_style "!=" "None"}}
+        <div class="site-header-content{{#match @custom.publication_cover_style "Large"}} large{{/match}}">
+            {{#if @site.cover_image}}
+                {{!-- This is a responsive image, it loads different sizes depending on device
+                https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+                <img class="site-header-cover"
+                    srcset="{{img_url @site.cover_image size="s"}} 300w,
+                            {{img_url @site.cover_image size="m"}} 600w,
+                            {{img_url @site.cover_image size="l"}} 1000w,
+                            {{img_url @site.cover_image size="xl"}} 2000w"
+                    sizes="100vw"
+                    src="{{img_url @site.cover_image size="xl"}}"
+                    alt=""
+                />
+            {{/if}}
+
+            {{#if @site.title}}
+                    <h1 class="site-title">{{@site.title}}</h1>
+            {{/if}}
+
+            {{#if @custom.show_description_text}}
+                {{#if @site.description}}
+                    <p>{{@site.description}}</p>
+                {{/if}}
+            {{/if}}
+        </div>
+    {{/match}}
+
+
     <div class="inner posts">
-        <h2 class="post-featured-title"> Featured </h2>
-         <div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}} post-feed-featured">
-            
-            {{#foreach posts}}
+        <h2 class="post-featured-title">Featured</h2>
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card-featured"}}
+        <div class="post-container">
+            <!-- Featured -->
+            <div class="post-feed-featured">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                            {{#foreach posts}}
+                                {{#if featured}}
+                                    <div class="swiper-slide">
+                                        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                                        {{> "post-card-featured"}}
+                                    </div>
+                                {{/if}}
+                            {{/foreach}}
+                        </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div> 
 
-            {{/foreach}}
+            <!-- Filter -->
+            <div class="filter-container">
+                <ul class="tags-conainer">
+                    {{#get "tags"}}
+                        {{#foreach tags}}
+                            <li class="tag-item">
+                                <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                            </li>
+                        {{/foreach}}
+                    {{/get}}
+                </ul>
+                <button class="gh-search-icon" aria-label="search" data-ghost-search>
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg>
+                </button>
+            </div>
+
+            <!-- None-featured -->
+            <div class="post-feed">
+                {{#foreach posts}}
+                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+                    {{> "post-card"}}
+                {{/foreach}}
+            </div>
         </div>
-
-        <div class="post-feed{{#match @custom.feed_layout "List"}} list{{/match}}">
-
-            {{#foreach posts}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
-
-            {{/foreach}}
-        </div>
-
     </div>
 </main>

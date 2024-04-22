@@ -58,7 +58,7 @@
 }
 
 .gh-content > [id] + * {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .gh-content [id] + .kg-card,
@@ -255,7 +255,7 @@
 }
 
 .gh-content .kg-card + :not(.kg-card) {
-    margin-top: 3vmin;
+    margin-top: 1.6em;
     margin-bottom: 0;
 }
 @media (max-width: 768px) {
@@ -310,11 +310,13 @@ figcaption a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    border-radius: 10px;
 }
 
 .kg-blockquote-alt {
     font-family: var(--font-serif);
     color: var(--color-midgrey);
+    border-radius: 10px;
 }
 
 .has-sans-body .kg-blockquote-alt {
@@ -338,10 +340,12 @@ figcaption a {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+    border-radius: 10px;
 }
 
 .kg-image-card img {
     margin: auto;
+    border-radius: 10px;
 }
 
 /* Highly specific styles for traditional Instagram embeds */
@@ -350,10 +354,12 @@ iframe.instagram-media {
     margin-left: auto !important;
     margin-right: auto !important;
     margin-bottom: 0 !important;
+    border-radius: 10px;
 }
 
 iframe.instagram-media + script + :not([id]) {
     margin-top: 6vmin;
+    border-radius: 10px;
 }
 
 /* Card captions

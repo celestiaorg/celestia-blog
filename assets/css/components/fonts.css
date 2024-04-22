@@ -2,8 +2,8 @@
 /* -------------------------------------------------------------------*/
 @font-face {
     font-family: "Inter";
-    src: url("../../fonts/subset-Inter-Light.woff2") format("woff2"),
-        url("../../fonts/subset-Inter-Light.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Inter-Light.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Inter-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -11,17 +11,25 @@
 
 @font-face {
     font-family: "Inter";
-    src: url("../../fonts/subset-Inter-Regular.woff2") format("woff2"),
-        url("../../fonts/subset-Inter-Regular.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Inter-Regular.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Inter-Regular.woff") format("woff");
     font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/built/fonts/subset-Inter-Medium.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Inter-Medium.woff") format("woff");
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("../../fonts/subset-Inter-Bold.woff2") format("woff2"),
-        url("../../fonts/subset-Inter-Bold.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Inter-Bold.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Inter-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -32,8 +40,8 @@
 
 @font-face {
     font-family: "Ruberoid";
-    src: url("../../fonts/subset-Ruberoid-Light.woff2") format("woff2"),
-        url("../../fonts/subset-Ruberoid-Light.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Ruberoid-Light.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Ruberoid-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -41,8 +49,8 @@
 
 @font-face {
     font-family: "Ruberoid";
-    src: url("../../fonts/subset-Ruberoid-Medium.woff2") format("woff2"),
-        url("../../fonts/subset-Ruberoid-Medium.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Ruberoid-Medium.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Ruberoid-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -50,8 +58,9 @@
 
 @font-face {
     font-family: "Ruberoid";
-    src: url("../../fonts/subset-Ruberoid-SemiBold.woff") format("woff2"),
-        url("../../fonts/subset-Ruberoid-SemiBold.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Ruberoid-SemiBold.woff")
+            format("woff2"),
+        url("/assets/built/fonts/subset-Ruberoid-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -59,8 +68,8 @@
 
 @font-face {
     font-family: "Ruberoid";
-    src: url("../../fonts/subset-Ruberoid-Bold.woff2") format("woff2"),
-        url("../../fonts/subset-Ruberoid-Bold.woff") format("woff");
+    src: url("/assets/built/fonts/subset-Ruberoid-Bold.woff2") format("woff2"),
+        url("/assets/built/fonts/subset-Ruberoid-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap;

@@ -11,7 +11,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 /* ---------------------------------------------------------- */
 
 /* Base components */
-/* @import "components/fonts.css"; */
+@import "components/fonts.css";
 @import "vars.css";
 @import "components/global.css";
 @import "components/forms.css";
@@ -134,7 +134,7 @@ html,
 .gh-card-content > strong {
     display: inline-block;
     padding: 1px 0;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: 0 -1px 0 0 inset currentColor;
     opacity: 0.75;
 }
@@ -347,14 +347,15 @@ ul.tags-conainer {
 
 .site-title {
     font-size: 110px;
-    font-weight: 500;
+    font-weight: 600;
     z-index: 10;
     margin: 0;
     padding: 0;
 }
 @media (max-width: 768px) {
     .site-title {
-        font-size: 14.68vw;
+        font-size: 14.48vw;
+        font-weight: 700;
     }
 }
 .site-logo {
@@ -382,6 +383,11 @@ ul.tags-conainer {
     position: relative;
     height: 100%;
     padding-bottom: 120px;
+}
+@media (max-width: 768px) {
+    .index-page {
+        padding-bottom: 80px;
+    }
 }
 
 .index-page:before {
@@ -468,7 +474,7 @@ ul.tags-conainer {
 .post-featured-title {
     color: #000;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.2px;
     margin-bottom: 40px;
     margin-top: 0px;
@@ -511,13 +517,13 @@ ul.tags-conainer {
 .post-feed-featured h2.post-card-title {
     font-size: 52px;
     line-height: 1em;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.2px;
 }
 
 .post-feed-featured .post-card-primary-tag {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .post-feed-featured .post-card-byline-date {
     font-size: 16px;
@@ -535,7 +541,7 @@ ul.tags-conainer {
 
 @media (max-width: 768px) {
     .post-feed-featured h2.post-card-title {
-        font-size: 44px;
+        font-size: 32px;
         line-height: 1.1em;
     }
     .post-feed-featured .post-card-primary-tag {
@@ -548,7 +554,7 @@ ul.tags-conainer {
 }
 @media (max-width: 768px) {
     .post-feed-featured {
-        margin-bottom: 20px;
+        margin-bottom: 44px;
     }
 }
 @media (max-width: 1320px) {
@@ -638,6 +644,12 @@ button.gh-search-icon:hover {
 }
 .tags-conainer .tag-item:hover {
     background-color: rgb(249, 249, 249);
+}
+
+@media (max-width: 768px) {
+    .tags-conainer .tag-item {
+        margin-right: 8px;
+    }
 }
 
 .swiper {
@@ -794,11 +806,10 @@ button.gh-search-icon:hover {
 
 .post-card-primary-tag {
     color: var(--ghost-accent-color);
-    font-size: 1.2rem;
+    font-size: 14px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0.2px;
-    margin-top: 1px;
 }
 
 .post-card-title {
@@ -824,7 +835,7 @@ button.gh-search-icon:hover {
 
 @media (max-width: 768px) {
     .post-card-content {
-        padding: 20px;
+        padding: 20px 16px;
     }
 }
 
@@ -933,7 +944,7 @@ button.gh-search-icon:hover {
     color: #373c44;
     font-size: 1.3rem;
     line-height: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .single-author {
@@ -1044,7 +1055,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media (max-width: 500px) {
     .post-card-title {
-        font-size: 1.9rem;
+        font-size: 2.3rem;
     }
 
     .post-card-excerpt {
@@ -1078,11 +1089,10 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     margin: 0 0 0.5rem;
     color: var(--color-midgrey);
-    font-size: 1.3rem;
+    font-size: 16px;
     line-height: 1.4em;
     letter-spacing: 0.02em;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .article-tag a {
@@ -1247,7 +1257,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 5px 5px 5px 15px;
     font-size: 1.8rem;
     color: var(--color-midgrey);
@@ -1263,7 +1273,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     display: inline-block;
     padding: 10px 15px;
     color: #fff;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 600;
     background: var(--ghost-accent-color);
     border-radius: 5px;
 }

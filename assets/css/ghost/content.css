@@ -41,7 +41,7 @@
 /* ---------------------------------------------------------- */
 
 .gh-content > * + * {
-    margin-top: 4vmin;
+    margin-top: 1.4vmin;
     margin-bottom: 0;
 }
 .gh-content > [id] {
@@ -50,11 +50,11 @@
 }
 
 .has-serif-title .gh-content > [id] {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
 }
 
 .gh-content [id]:not(:first-child) {
-    margin: 2em 0 0;
+    margin: 1.6em 0 0;
 }
 
 .gh-content > [id] + * {
@@ -63,7 +63,7 @@
 
 .gh-content [id] + .kg-card,
 .gh-content blockquote + .kg-card {
-    margin-top: 6vmin;
+    margin-top: 3vmin;
 }
 
 .gh-content a {
@@ -77,25 +77,25 @@
 .gh-canvas > ul,
 .gh-canvas > dl,
 .gh-canvas > p {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.6em;
+    font-size: 1.7rem;
+    line-height: 1.42em;
 }
 
 .gh-content > ul,
 .gh-content > ol,
 .gh-content > dl {
-    padding-left: 1.9em;
+    padding-left: 1;
 }
 
 .gh-content .kg-callout-card .kg-callout-text,
 .gh-content .kg-toggle-card .kg-toggle-content > ol,
 .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .gh-content .kg-toggle-card .kg-toggle-content > p {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-weight: 400;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     line-height: 1.6em;
 }
 
@@ -134,7 +134,7 @@
 .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .gh-content .kg-product-card .kg-product-card-description > ol,
 .gh-content .kg-product-card .kg-product-card-description > ul {
-    padding-left: 1.9em;
+    padding-left: 1.4em;
 }
 
 .gh-content > blockquote:not([class]) {
@@ -201,11 +201,11 @@
 }
 
 .gh-content hr {
-    margin-top: 6vmin;
+    margin-top: 40px;
 }
 
 .gh-content hr + * {
-    margin-top: 6vmin !important;
+    margin-top: 40px !important;
 }
 
 .gh-content blockquote {
@@ -229,7 +229,7 @@
     .gh-canvas ul,
     .gh-canvas dl,
     .gh-canvas p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .gh-content blockquote::before {
@@ -245,13 +245,23 @@
 /* ---------------------------------------------------------- */
 
 .gh-content :not(.kg-card):not([id]) + .kg-card {
-    margin-top: 6vmin;
+    margin-top: 3vmin;
     margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .gh-content :not(.kg-card):not([id]) + .kg-card {
+        margin-top: 5vmin;
+    }
 }
 
 .gh-content .kg-card + :not(.kg-card) {
-    margin-top: 6vmin;
+    margin-top: 3vmin;
     margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .gh-content .kg-card + :not(.kg-card) {
+        margin-top: 8vmin;
+    }
 }
 
 .has-serif-title .kg-toggle-card .kg-toggle-heading-text {

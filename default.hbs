@@ -36,14 +36,11 @@
                         {{@site.title}}
                     {{/if}}
                 </a>
-                <a class="gh-burger" role="button" aria-label="menu">
+                {{!-- <a class="gh-burger" role="button" aria-label="menu">
                     <div class="gh-burger-box">
                         <div class="gh-burger-inner"></div>
                     </div>
-                </a>
-            </div>
-            <div class="gh-head-menu">
-                {{navigation}}
+                </a> --}}
             </div>
             <div class="gh-head-actions">
                 {{#if @custom.header_cta_link}}
@@ -86,9 +83,15 @@
   <!-- Initialize Swiper -->
   <script>
      var swiper = new Swiper(".mySwiper", {
+      autoHeight: true,
       slidesPerView: 1,
       spaceBetween: 30,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       loop: true,
+      speed: 400,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

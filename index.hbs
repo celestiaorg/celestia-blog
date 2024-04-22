@@ -50,24 +50,28 @@
                             {{/foreach}}
                         </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-container">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div> 
 
             <!-- Filter -->
             <div class="filter-container">
-                <ul class="tags-conainer">
-                    {{#get "tags"}}
-                        {{#foreach tags}}
-                            <li class="tag-item">
-                                <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
-                            </li>
-                        {{/foreach}}
-                    {{/get}}
-                </ul>
-                <button class="gh-search-icon" aria-label="search" data-ghost-search>
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg>
-                </button>
+                <div class="filter-container-inner">
+                    <ul class="tags-conainer">
+                        {{#get "tags"}}
+                            {{#foreach tags}}
+                                <li class="tag-item">
+                                    <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                                </li>
+                            {{/foreach}}
+                        {{/get}}
+                    </ul>
+                    <button class="gh-search-icon" aria-label="search" data-ghost-search>
+                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg>
+                    </button>
+                </div>
             </div>
 
             <!-- None-featured -->

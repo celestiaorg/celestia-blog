@@ -38,6 +38,9 @@ html,
     min-height: 100vh;
     background: #ffffff;
 }
+.site-content {
+    flex-grow: 1;
+}
 
 .site-main {
     position: relative;
@@ -277,7 +280,7 @@ html,
     position: relative;
 }
 
-.tags-conainer {
+ul.tags-conainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -327,7 +330,7 @@ html,
 
 @media (max-width: 768px) {
     .site-header-content {
-        padding: 16vw 3vw 24vw;
+        padding: 32vw 0 18vw;
     }
 }
 
@@ -349,9 +352,9 @@ html,
     margin: 0;
     padding: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .site-title {
-        font-size: 80px;
+        font-size: 14.68vw;
     }
 }
 
@@ -380,6 +383,7 @@ html,
     overflow-x: hidden;
     position: relative;
     height: 100%;
+    padding-bottom: 120px;
 }
 
 .index-page:before {
@@ -420,94 +424,6 @@ html,
     }
 }
 
-/* Mobile Menu
-/* ---------------------------------------------------------- */
-/* IDs needed to ensure sufficient specificity */
-
-@media (max-width: 900px) {
-    .gh-burger {
-        display: inline-block;
-    }
-    #gh-head {
-        transition: all 0.4s ease-out;
-        overflow: hidden;
-        z-index: 1;
-    }
-    #gh-head .gh-head-inner {
-        height: 100%;
-        grid-template-columns: 1fr;
-    }
-    #gh-head .gh-head-brand {
-        position: relative;
-        z-index: 10;
-        grid-column-start: auto;
-        max-width: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        user-select: none;
-    }
-    .home-template #gh-head.has-cover .gh-head-brand {
-        justify-content: flex-end;
-    }
-    #gh-head .gh-head-menu {
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0 0 10vh 0;
-        font-weight: 300;
-        font-size: 3.6rem;
-        line-height: 1.1em;
-    }
-    #gh-head .gh-head-menu .nav li {
-        margin: 5px 0;
-    }
-    #gh-head .gh-head-menu .nav a {
-        padding: 8px 0;
-    }
-    #gh-head .gh-head-menu .nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #gh-head .gh-head-actions {
-        padding: 20px 0;
-        justify-content: center;
-        text-align: left;
-    }
-    #gh-head .gh-head-actions a {
-        margin: 0 10px;
-    }
-    /* Hide collapsed content */
-    #gh-head .gh-head-actions,
-    #gh-head .gh-head-menu {
-        display: none;
-    }
-    /* Open the menu */
-    .gh-head-open {
-        overflow: hidden;
-        height: 100vh;
-    }
-    .gh-head-open #gh-head {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 3999999;
-        overflow-y: scroll;
-    }
-    .gh-head-open #gh-head .gh-head-inner {
-        grid-template-rows: auto 1fr auto;
-    }
-    .gh-head-open #gh-head .gh-head-actions,
-    .gh-head-open #gh-head .gh-head-menu {
-        display: flex;
-    }
-}
-
 @media (max-width: 600px) {
     #gh-head .gh-head-menu {
         font-size: 6vmin;
@@ -530,9 +446,6 @@ html,
     background: var(--ghost-accent-color);
 }
 
-.home-template .gh-head.has-cover .gh-head-logo {
-    display: none;
-}
 .home-template .gh-head.has-cover .gh-head-menu {
     margin-left: -2.5vmin;
 }
@@ -543,7 +456,7 @@ html,
 .post-feed {
     position: relative;
     display: grid;
-    grid-gap: 4vmin;
+    grid-gap: 34px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -555,9 +468,87 @@ html,
     margin-top: 0px;
 }
 
+@media (max-width: 768px) {
+    .post-featured-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+}
+
 .post-feed-featured {
     position: relative;
     margin-bottom: 119px;
+}
+
+.post-feed-featured .post-card {
+    border: none;
+    box-shadow: none;
+}
+
+.post-card-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.post-feed-featured .post-card-header-container {
+    margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+    .post-card-header-container {
+        margin-bottom: 14px;
+    }
+}
+
+.post-feed-featured h2.post-card-title {
+    font-size: 52px;
+    line-height: 1em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.post-feed-featured .post-card-primary-tag {
+    font-size: 16px;
+    font-weight: 600;
+}
+.post-feed-featured .post-card-byline-date {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+
+@media (min-width: 1320px) {
+    .post-feed-featured .post-card-content {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-feed-featured h2.post-card-title {
+        font-size: 44px;
+        line-height: 1.1em;
+    }
+    .post-feed-featured .post-card-primary-tag {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .post-feed-featured .post-card-byline-date {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .post-feed-featured {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1320px) {
+    .post-feed-featured .post-card-content {
+        padding: 20px 0;
+    }
 }
 
 .filter-container {
@@ -565,6 +556,31 @@ html,
     align-items: center;
     justify-content: space-between;
     margin-bottom: 36px;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    -webkit-overflow-scrolling: touch; /* For Webkit browsers like Safari and Chrome */
+}
+.filter-container::-webkit-scrollbar {
+    /* For WebKit browsers like Chrome and Safari */
+    display: none;
+}
+
+.filter-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .filter-container-inner {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
 }
 
 button.gh-search-icon {
@@ -577,41 +593,112 @@ button.gh-search-icon {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 150ms ease-in-out;
+}
+button.gh-search-icon:hover {
+    background-color: rgb(249, 249, 249);
+}
+@media (max-width: 768px) {
+    button.gh-search-icon {
+        padding: 13px 14px;
+        margin-left: 16px;
+    }
 }
 
-.tags-conainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tags-conainer .tag {
+    padding: 15px 22px;
+}
+@media (max-width: 768px) {
+    .tags-conainer .tag {
+        margin-right: 8px;
+        padding: 12px 14px;
+    }
 }
 
 .tags-conainer .tag-item {
     color: inherit;
     background-color: #fff;
     border-radius: 8px;
-    padding: 15px 22px;
     border: 1px solid #ebebeb;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
     margin-right: 16px;
+    user-select: none; /* Make text unselectable */
+    transition: all 150ms ease-in-out;
+}
+.tags-conainer .tag-item:hover {
+    background-color: rgb(249, 249, 249);
 }
 
 .swiper {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.swiper-button-container {
+    padding-top: 32px;
+    width: fit-content;
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1320px) {
+    .site-header-content .swiper-button-container {
+        padding-top: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .swiper-button-container {
+        display: none;
+    }
 }
 
 .swiper-button-prev {
-    left: -80px;
+    position: relative;
     color: #000;
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+    left: unset;
+    right: unset;
+    margin-top: unset;
+}
+.swiper-button-prev:hover {
+    background-color: rgb(249, 249, 249);
+}
+.swiper-button-prev::after {
+    transform: translateX(-2px);
+    font-size: 28px;
 }
 .swiper-button-next {
-    right: -80px;
+    position: relative;
     color: #000;
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    transition: all 150ms ease-in-out;
+    left: unset;
+    right: unset;
+    margin-top: unset;
+}
+.swiper-button-next:hover {
+    transition: all 150ms ease-in-out;
+}
+.swiper-button-next::after {
+    transform: translateX(2px);
+    font-size: 28px;
 }
 
 .swiper-slide {
@@ -653,6 +740,10 @@ button.gh-search-icon {
     min-height: 220px;
     background-size: cover;
     word-break: break-word;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: all 150ms ease-in-out;
 }
 
 @media (max-width: 700px) {
@@ -672,11 +763,11 @@ button.gh-search-icon {
     width: 100%;
     height: 200px;
     background: var(--color-lightgrey) no-repeat center center;
-
     object-fit: cover;
 }
 
 .post-card-content-link {
+    height: 100%;
     position: relative;
     display: block;
     color: var(--color-darkgrey);
@@ -684,10 +775,6 @@ button.gh-search-icon {
 
 .post-card-content-link:hover {
     text-decoration: none;
-}
-
-.post-card-header {
-    margin: 20px 0 0;
 }
 
 .post-feed .no-image .post-card-content-link {
@@ -699,12 +786,12 @@ button.gh-search-icon {
 }
 
 .post-card-primary-tag {
-    margin: 0 0 0.2em;
     color: var(--ghost-accent-color);
     font-size: 1.2rem;
-    font-weight: 500;
+    line-height: 1.5;
+    font-weight: 600;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
+    margin-top: 1px;
 }
 
 .post-card-title {
@@ -725,12 +812,20 @@ button.gh-search-icon {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding: 20px 32px;
+}
+
+@media (max-width: 768px) {
+    .post-card-content {
+        padding: 20px;
+    }
 }
 
 .post-card-excerpt {
     max-width: 56em;
-    color: #60757e;
-    font-family: var(--font-serif);
+    color: #000000;
+    font-family: var(--font-sans);
+    font-weight: 300;
 }
 
 .has-sans-body .post-card-excerpt {
@@ -814,7 +909,7 @@ button.gh-search-icon {
 }
 
 .post-card-byline-date {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.5em;
 }
 
@@ -897,7 +992,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         position: relative;
         grid-column: 1 / span 1;
         margin-bottom: 0;
-        min-height: 380px;
+        height: 380px;
     }
 
     .post-feed.list .post-card-large .post-card-image-link {
@@ -954,12 +1049,20 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* ---------------------------------------------------------- */
 
 .article {
-    padding: 8vmin 0;
+    padding: 200px 60px 127px;
     word-break: break-word;
 }
 
 .article-header {
-    padding: 0 0 6vmin 0;
+    padding: 0 0 80px 0;
+}
+@media (max-width: 768px) {
+    .article {
+        padding: 119px 0 127px;
+    }
+    .article-header {
+        padding: 0 0 48px 0;
+    }
 }
 
 .article-tag {
@@ -997,7 +1100,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .gh-canvas .article-image {
     grid-column: wide-start / wide-end;
     width: 100%;
-    margin: 6vmin 0 0;
+    margin: 48px 0 0;
 }
 
 .image-full .article-image {
@@ -1013,11 +1116,15 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    border-radius: 20px;
 }
 
 @media (max-width: 600px) {
     .article-excerpt {
         font-size: 1.8rem;
+    }
+    .gh-canvas .article-image img {
+        border-radius: 10px;
     }
 }
 
@@ -1027,7 +1134,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .article-byline {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 
 .article-byline-content {
@@ -1094,11 +1201,16 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .footer-cta {
     position: relative;
-    margin-bottom: -40px;
-    padding: 9vmin 4vmin 10vmin;
+    padding: 9vmin 4vmin 8vmin;
     color: #fff;
     text-align: center;
     background: #0a0b0c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 768px) {
+    .footer-cta {
+        padding: 12vmin 4vmin 12vmin;
+    }
 }
 
 .footer-cta.cta-alt {
@@ -1154,10 +1266,14 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .read-more-wrap {
     width: 100%;
-    padding: 4vmin;
-    margin: 40px auto -40px;
+    padding: 4vmin 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: #0a0b0c;
+}
+@media (max-width: 768px) {
+    .read-more-wrap {
+        padding: 9vmin 4vmin 8vmin;
+    }
 }
 
 .read-more {
@@ -1166,8 +1282,12 @@ make sure this only happens on large viewports / desktop-ish devices.
     grid-gap: 4vmin;
 }
 
+.read-more .post-card {
+    background-color: white;
+    border: none;
+}
+
 .read-more .post-card-title {
-    color: #fff;
     opacity: 0.8;
 }
 
@@ -1302,6 +1422,24 @@ make sure this only happens on large viewports / desktop-ish devices.
     order: 1;
 }
 
+.tags-title-container {
+    margin-bottom: 60px;
+}
+
+.tags-title-container .post-featured-title {
+    color: var(--ghost-accent-color);
+    margin-bottom: 4px;
+}
+
+.tags-title-container .post-card-primary-tag {
+    color: var(--ghost-accent-color);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
 /* Error Template
 /* ---------------------------------------------------------- */
 
@@ -1366,6 +1504,16 @@ make sure this only happens on large viewports / desktop-ish devices.
     .error-message {
         padding-bottom: 14vw;
     }
+}
+
+.gh-head.has-cover {
+    background: transparent;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2000;
+    border-bottom: none;
 }
 
 /* Site Footer

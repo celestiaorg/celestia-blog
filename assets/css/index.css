@@ -701,7 +701,7 @@ button.gh-search-icon:hover {
     margin-top: unset;
 }
 .swiper-button-next:hover {
-    transition: all 150ms ease-in-out;
+    background-color: rgb(249, 249, 249);
 }
 .swiper-button-next::after {
     transform: translateX(2px);

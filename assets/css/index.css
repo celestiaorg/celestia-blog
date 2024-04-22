@@ -324,7 +324,7 @@ ul.tags-conainer {
 
 @media (max-width: 992px) {
     .site-header-content {
-        padding: 20vw 3vw 16vw 3vw;
+        padding: 20vw 0 16vw;
     }
 }
 
@@ -357,7 +357,6 @@ ul.tags-conainer {
         font-size: 14.68vw;
     }
 }
-
 .site-logo {
     max-height: 55px;
 }
@@ -380,7 +379,6 @@ ul.tags-conainer {
 /* Home hero
 /* ---------------------------------------------------------- */
 .index-page {
-    overflow-x: hidden;
     position: relative;
     height: 100%;
     padding-bottom: 120px;
@@ -391,7 +389,7 @@ ul.tags-conainer {
     left: 0;
     top: -8vw;
     width: 100%;
-    height: 100%;
+    height: 40vw;
     content: "";
     z-index: 0;
     background: url(../images/header-bg.png) no-repeat scroll top center
@@ -401,6 +399,7 @@ ul.tags-conainer {
 
 @media (max-width: 2000px) {
     .index-page:before {
+        height: 100%;
         top: 0;
     }
 }

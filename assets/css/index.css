@@ -389,7 +389,7 @@ ul.tags-conainer {
 .index-page:before {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -8vw;
     width: 100%;
     height: 100%;
     content: "";
@@ -397,6 +397,12 @@ ul.tags-conainer {
     background: url(../images/header-bg.png) no-repeat scroll top center
         transparent;
     background-size: 100%;
+}
+
+@media (max-width: 2000px) {
+    .index-page:before {
+        top: 0;
+    }
 }
 
 @media (max-width: 1200px) {

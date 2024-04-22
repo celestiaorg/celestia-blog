@@ -466,6 +466,7 @@ ul.tags-conainer {
 }
 
 .post-featured-title {
+    color: #000;
     font-size: 36px;
     font-weight: 500;
     letter-spacing: 0.2px;
@@ -613,6 +614,7 @@ button.gh-search-icon:hover {
 
 .tags-conainer .tag {
     padding: 15px 22px;
+    font-weight: 500;
 }
 @media (max-width: 768px) {
     .tags-conainer .tag {

@@ -330,7 +330,7 @@ ul.tags-conainer {
 
 @media (max-width: 768px) {
     .site-header-content {
-        padding: 32vw 0 18vw;
+        padding: 32vw 0 16vw;
     }
 }
 
@@ -483,7 +483,7 @@ ul.tags-conainer {
 @media (max-width: 768px) {
     .post-featured-title {
         font-size: 26px;
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 }
 
@@ -541,7 +541,7 @@ ul.tags-conainer {
 
 @media (max-width: 768px) {
     .post-feed-featured h2.post-card-title {
-        font-size: 32px;
+        font-size: 2.3rem;
         line-height: 1.1em;
     }
     .post-feed-featured .post-card-primary-tag {
@@ -549,7 +549,8 @@ ul.tags-conainer {
         margin-bottom: 0;
     }
     .post-feed-featured .post-card-byline-date {
-        font-size: 14px;
+        font-size: 1.4rem;
+        font-weight: 400;
     }
 }
 @media (max-width: 768px) {
@@ -1094,6 +1095,11 @@ make sure this only happens on large viewports / desktop-ish devices.
     letter-spacing: 0.02em;
     font-weight: 600;
 }
+@media (max-width: 768px) {
+    .article-tag {
+        margin: 0 0 1rem;
+    }
+}
 
 .article-tag a {
     color: var(--ghost-accent-color);
@@ -1191,6 +1197,13 @@ make sure this only happens on large viewports / desktop-ish devices.
     border: #fff 2px solid;
     border-radius: 100%;
     transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 700ms;
+}
+
+@media (max-width: 768px) {
+    .author-avatar {
+        width: 48px;
+        height: 48px;
+    }
 }
 
 .basic-info .avatar-wrapper {

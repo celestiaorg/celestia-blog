@@ -1077,7 +1077,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 @media (max-width: 768px) {
     .article {
-        padding: 119px 0 127px;
+        padding: 112px 0 127px;
     }
     .article-header {
         padding: 0 0 48px 0;
@@ -1148,6 +1148,9 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
     .gh-canvas .article-image img {
         border-radius: 10px;
+    }
+    .gh-canvas .article-image {
+        margin: 40px 0 0;
     }
 }
 

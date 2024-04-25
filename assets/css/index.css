@@ -1354,6 +1354,15 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* Author Template
 /* ---------------------------------------------------------- */
 
+.author-template .site-content {
+    padding: 200px 0px 127px;
+}
+@media (max-width: 700px) {
+    .author-template .site-content {
+        padding: 112px 0 80px;
+    }
+}
+
 .author-template .posts {
     position: relative;
     height: 100%;
@@ -1365,10 +1374,6 @@ make sure this only happens on large viewports / desktop-ish devices.
 .author-template .posts .post-feed {
     grid-column: 2 / 4;
     grid-template-columns: 1fr 1fr;
-}
-
-.author-profile {
-    padding: 4vmin 0;
 }
 
 .author-profile-content {

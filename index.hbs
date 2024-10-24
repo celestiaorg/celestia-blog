@@ -40,15 +40,14 @@
             <div class="post-feed-featured">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+                        {{#get "posts" filter="featured:true" limit="all"}}
                             {{#foreach posts}}
-                                {{#if featured}}
-                                    <div class="swiper-slide">
-                                        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                                        {{> "post-card-featured"}}
-                                    </div>
-                                {{/if}}
+                                <div class="swiper-slide">
+                                    {{> "post-card-featured"}}
+                                </div>
                             {{/foreach}}
-                        </div>
+                        {{/get}}
+                    </div>
                 </div>
                 <div class="swiper-button-container">
                     <div class="swiper-button-prev"></div>
@@ -56,7 +55,7 @@
                 </div>
             </div> 
 
-            <!-- Filter -->
+            <!-- Filter for real -->
             <div class="filter-container">
                 <div class="filter-container-inner">
                     <ul class="tags-conainer">
@@ -74,13 +73,17 @@
                 </div>
             </div>
 
-            <!-- None-featured -->
+            <!-- Non-featured posts with pagination -->
             <div class="post-feed">
-                {{#foreach posts}}
-                    {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                    {{> "post-card"}}
-                {{/foreach}}
+                {{#get "posts" limit=@config.posts_per_page page=pagination.page}}
+                    {{#foreach posts}}
+                        {{> "post-card"}}
+                    {{/foreach}}
+                {{/get}}
             </div>
+
+            {{!-- Pagination --}}
+            {{pagination}}
         </div>
     </div>
     

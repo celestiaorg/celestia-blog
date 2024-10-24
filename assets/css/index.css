@@ -761,6 +761,7 @@ button.gh-search-icon:hover {
     background-size: cover;
     word-break: break-word;
     border: 1px solid #ebebeb;
+    background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     transition: all 150ms ease-in-out;
@@ -791,6 +792,47 @@ button.gh-search-icon:hover {
     position: relative;
     display: block;
     color: var(--color-darkgrey);
+}
+
+.post-card-readmore {
+    margin-top: 20px;
+}
+
+.post-card-readmore a {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.post-card-readmore a svg {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.post-card-readmore a:hover svg {
+    transform: translateX(10px);
+}
+
+@media (max-width: 768px) {
+    .post-card-content {
+        padding: 20px 16px;
+    }
+
+    .post-card-readmore {
+        margin-top: 15px;
+    }
+
+    .post-card-readmore a {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
 }
 
 .post-card-content-link:hover {
@@ -831,6 +873,7 @@ button.gh-search-icon:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 20px 32px;
 }
 
@@ -968,6 +1011,10 @@ the full width of the grid to give it more emphasis. Wrapped in a media query to
 make sure this only happens on large viewports / desktop-ish devices.
 
  */
+
+.post-card-large {
+    background-color: transparent;
+}
 
 @media (min-width: 701px) {
     .post-feed.list .post-card-large {
@@ -1999,3 +2046,47 @@ file to add some of your own styles. Well, you've come to
 the right place. Onward!
 
  */
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4vmin 0;
+    padding: 2vmin 0;
+    border-top: 1px solid #ebebeb;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid var(--ghost-accent-color);
+    color: var(--ghost-accent-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.pagination a:hover {
+    background-color: var(--ghost-accent-color);
+    color: #fff;
+}
+
+.pagination .page-number {
+    color: #738a94;
+}
+
+@media (max-width: 500px) {
+    .pagination {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .pagination a {
+        margin-bottom: 10px;
+    }
+
+    .pagination .page-number {
+        margin-bottom: 10px;
+    }
+}

@@ -5,7 +5,7 @@
     padding: 3vmin 4vmin;
     font-size: 1.6rem;
     line-height: 1.3em;
-    background: inherit;
+    background: transparent;
     border-bottom: 1px solid rgba(8, 14, 20, 0.1);
 }
 

@@ -306,6 +306,11 @@ ul.tags-conainer {
     object-fit: cover;
 }
 
+.gh-head,
+.site-header-content {
+    background: transparent;
+}
+
 .site-header-content {
     position: relative;
     z-index: 100;

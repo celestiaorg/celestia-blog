@@ -77,10 +77,10 @@
 .gh-canvas > ul,
 .gh-canvas > dl,
 .gh-canvas > p {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     font-weight: 400;
-    font-size: 1.7rem;
-    line-height: 1.42em;
+    font-size: 2.1rem;
+    line-height: 1.6em;
 }
 
 .gh-content > ul,
@@ -93,7 +93,7 @@
 .gh-content .kg-toggle-card .kg-toggle-content > ol,
 .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .gh-content .kg-toggle-card .kg-toggle-content > p {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 1.6em;
@@ -124,7 +124,7 @@
 .has-sans-body .gh-content .kg-toggle-card .kg-toggle-content > ol,
 .has-sans-body .gh-content .kg-toggle-card .kg-toggle-content > ul,
 .has-sans-body .gh-content .kg-toggle-card .kg-toggle-content > p {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
 }
 
 .gh-content > ul,

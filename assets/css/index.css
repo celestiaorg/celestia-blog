@@ -886,7 +886,7 @@ button.gh-search-icon:hover {
 .post-card-excerpt {
     max-width: 56em;
     color: #000000;
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     font-weight: 300;
 }
 

@@ -28,6 +28,7 @@
 
     <header id="gh-head" class="gh-head{{#match @custom.publication_cover_style "!=" "None"}} has-cover{{/match}}">
         <nav class="gh-head-inner inner gh-container">
+
             <div class="gh-head-brand">
                 <a class="gh-head-logo" href="{{@site.url}}">
                     {{#if @site.logo}}
@@ -46,10 +47,14 @@
                 {{#if @custom.header_cta_link}}
                     <a class="gh-head-button" href="{{@custom.header_cta_link}}" target="_blank" rel="noopener">
                         {{#if @custom.header_cta_link}}
-                        {{@custom.header_cta_text}}
+                        <span>{{@custom.header_cta_text}}</span>
                         {{else}}
-                            Button
+                            <span>Button</span>
                         {{/if}}
+                       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.71789 12.0721L11.1818 4.60823" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+                            <path d="M11.6311 11.0759V4.00486H4.56004" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="bevel"/>
+                        </svg> 
                     </a>
                 {{/if}}
             </div>

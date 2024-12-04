@@ -72,19 +72,6 @@ html,
     margin: 0 auto;
 }
 
-.gh-head-actions a svg {
-    height: 1.8rem;
-    fill: currentcolor;
-}
-
-.gh-head-actions a:first-child svg {
-    margin-left: 20px;
-}
-
-.gh-head-actions a:last-child svg {
-    height: 2rem;
-}
-
 /* Index
 /* ---------------------------------------------------------- */
 
@@ -316,7 +303,7 @@ ul.tags-conainer {
     padding: 250px 60px 127px 60px;
     min-height: 200px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--color-darkgrey);
     background: transparent !important;
@@ -383,6 +370,7 @@ ul.tags-conainer {
     position: relative;
     height: 100%;
     padding-bottom: 120px;
+    padding-top: 60px;
 }
 @media (max-width: 768px) {
     .index-page {
@@ -390,7 +378,7 @@ ul.tags-conainer {
     }
 }
 
-.index-page:before {
+.viewport:before {
     position: absolute;
     left: 0;
     top: -8vw;
@@ -404,7 +392,7 @@ ul.tags-conainer {
 }
 
 @media (max-width: 2000px) {
-    .index-page:before {
+    .viewport:before {
         height: 100%;
         top: 0;
     }
@@ -412,7 +400,7 @@ ul.tags-conainer {
 
 @media (max-width: 1200px) {
     /* Assuming xl breakpoint */
-    .index-page:before {
+    .viewport:before {
         background-size: 130%;
         background-position: center top;
     }
@@ -420,7 +408,7 @@ ul.tags-conainer {
 
 @media (max-width: 992px) {
     /* Assuming lg breakpoint */
-    .index-page:before {
+    .viewport:before {
         background-size: 150%;
         background-position: center top;
     }
@@ -428,7 +416,7 @@ ul.tags-conainer {
 
 @media (max-width: 768px) {
     /* Assuming md breakpoint */
-    .index-page:before {
+    .viewport:before {
         top: -5vw;
         background-size: 200%;
         background-position: center top;
@@ -439,14 +427,6 @@ ul.tags-conainer {
     #gh-head .gh-head-menu {
         font-size: 6vmin;
     }
-}
-
-.home-template .gh-head.has-cover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 2000;
 }
 
 .home-template .gh-head.has-cover {
@@ -489,7 +469,7 @@ ul.tags-conainer {
 
 .post-feed-featured {
     position: relative;
-    margin-bottom: 119px;
+    margin-bottom: 80px;
 }
 
 .post-feed-featured .post-card {
@@ -610,7 +590,7 @@ button.gh-search-icon {
     transition: all 150ms ease-in-out;
 }
 button.gh-search-icon:hover {
-    background-color: rgb(249, 249, 249);
+    background-color: #ffffffb0;
 }
 @media (max-width: 768px) {
     button.gh-search-icon {
@@ -632,9 +612,9 @@ button.gh-search-icon:hover {
 
 .tags-conainer .tag-item {
     color: inherit;
-    background-color: #fff;
+    background-color: #ffffffb0;
     border-radius: 8px;
-    border: 1px solid #ebebeb;
+    border: 1px #ffffffb0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1115,7 +1095,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* ---------------------------------------------------------- */
 
 .article {
-    padding: 200px 60px 127px;
+    padding: 100px 60px 127px;
     word-break: break-word;
 }
 
@@ -1590,16 +1570,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     .error-message {
         padding-bottom: 14vw;
     }
-}
-
-.gh-head.has-cover {
-    background: transparent;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 2000;
-    border-bottom: none;
 }
 
 /* Site Footer

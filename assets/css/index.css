@@ -590,8 +590,9 @@ button.gh-search-icon {
     transition: all 150ms ease-in-out;
 }
 button.gh-search-icon:hover {
-    background-color: #ffffffb0;
+    background-color: rgb(249, 249, 249);
 }
+
 @media (max-width: 768px) {
     button.gh-search-icon {
         padding: 13px 14px;
@@ -614,7 +615,7 @@ button.gh-search-icon:hover {
     color: inherit;
     background-color: #ffffffb0;
     border-radius: 8px;
-    border: 1px #ffffffb0;
+    border: 1px solid #ebebeb;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1104,7 +1105,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 @media (max-width: 768px) {
     .article {
-        padding: 112px 0 127px;
+        padding: 26px 0 60px;
     }
     .article-header {
         padding: 0 0 48px 0;

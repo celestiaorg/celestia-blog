@@ -1,8 +1,8 @@
 {
-    "name": "ghost-celestia-theme-v306",
+    "name": "ghost-celestia-theme-v307",
     "description": "The official Ghost theme for blog.celestia.org",
     "demo": "https://starter.ghost.io",
-    "version": "3.0.6",
+    "version": "3.0.7",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -99,22 +99,6 @@
                     "Elegant serif"
                 ],
                 "default": "Elegant serif"
-            },
-            "publication_cover_style": {
-                "type": "select",
-                "options": [
-                    "None",
-                    "Medium",
-                    "Large"
-                ],
-                "default": "Medium",
-                "group": "homepage"
-            },
-            "show_description_text": {
-                "type": "boolean",
-                "default": false,
-                "group": "homepage",
-                "description": "Toggle to show the site description text on the homepage hero section"
             },
             "color_scheme": {
                 "type": "select",

@@ -17,6 +17,31 @@
             {{/if}}
             --button-text-color: {{#match @custom.header_cta_style "Dark"}}#fff{{else}}var(--color-darkgrey){{/match}};
         }
+        
+        /* Hide only elements with data-truncate attribute until truncation is complete */
+        /* Only apply truncation above 1000px viewport width */
+        @media (min-width: 1001px) {
+            [data-truncate] {
+                opacity: 0;
+                transition: opacity 0.1s ease-in;
+            }
+            
+            /* Class to show content after truncation */
+            .content-ready {
+                opacity: 1 !important;
+            }
+            
+            /* Fallback to ensure content becomes visible after 0.5 seconds even if JS fails */
+            [data-truncate] {
+                animation: showContent 0s 0.5s forwards;
+            }
+            
+            @keyframes showContent {
+                to {
+                    opacity: 1;
+                }
+            }
+        }
     </style>
 
     {{ghost_head}}

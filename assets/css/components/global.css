@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     color: #35373a;
-    font-family: var(--inter);
+    font-family: var(--sans);
     font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -430,7 +430,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--ruberoid), sans-serif;
+    font-family: var(--heading), sans-serif;
     margin-top: 0;
     line-height: 1em;
     text-rendering: optimizeLegibility;

@@ -28,6 +28,7 @@ production stylesheet in assets/built/screen.css using: npm run dev
 @import "ghost/pagination.css";
 @import "ghost/comments.css";
 
+/* Custom components */
 /* Main - Your styles here! Edit below
 /* ---------------------------------------------------------- */
 
@@ -540,7 +541,12 @@ ul.tags-conainer {
 }
 @media (max-width: 1320px) {
     .post-feed-featured .post-card-content {
-        padding: 20px 0;
+        padding: 0;
+    }
+}
+@media (max-width: 1000px) {
+    .post-feed-featured .post-card-content {
+        padding: 20px 0px;
     }
 }
 
@@ -865,14 +871,11 @@ button.gh-search-icon:hover {
 }
 
 .post-card-excerpt {
+    font-family: var(--font-serif);
     max-width: 56em;
-    color: #000000;
+    color: #2a2a2a;
     font-weight: 400;
     font-size: 18px;
-}
-
-.has-sans-body .post-card-excerpt {
-    font-family: var(--inter);
 }
 
 .post-card-excerpt p {

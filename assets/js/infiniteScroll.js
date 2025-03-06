@@ -59,6 +59,11 @@ export default function infiniteScroll() {
                             } else {
                                 observer.disconnect();
                             }
+
+                            // Dispatch a custom event when new content is loaded
+                            document.dispatchEvent(
+                                new CustomEvent("infiniteScrollComplete")
+                            );
                         });
                     }
                 }

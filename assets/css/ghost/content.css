@@ -41,7 +41,7 @@
 /* ---------------------------------------------------------- */
 
 .gh-content > * + * {
-    margin-top: 1.4vmin;
+    margin-top: 4vmin;
     margin-bottom: 0;
 }
 .gh-content > [id] {
@@ -54,7 +54,7 @@
 }
 
 .gh-content [id]:not(:first-child) {
-    margin: 1.6em 0 0;
+    margin: 2em 0 0;
 }
 
 .gh-content > [id] + * {
@@ -245,7 +245,7 @@
 /* ---------------------------------------------------------- */
 
 .gh-content :not(.kg-card):not([id]) + .kg-card {
-    margin-top: 3vmin;
+    margin-top: 6vmin;
     margin-bottom: 0;
 }
 @media (max-width: 768px) {
@@ -396,7 +396,7 @@ iframe.instagram-media + script + :not([id]) {
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: var(--inter);
+    font-family: var(--sans);
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;

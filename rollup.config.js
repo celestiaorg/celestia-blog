@@ -8,8 +8,8 @@ import babel from "@rollup/plugin-babel";
 // Minifies the bundle
 import terser from "@rollup/plugin-terser";
 // Copy Fonts
-import copy from "rollup-plugin-copy";
 import url from "@rollup/plugin-url";
+import copy from "rollup-plugin-copy";
 
 // CSS
 // Enable the PostCSS preprocessor

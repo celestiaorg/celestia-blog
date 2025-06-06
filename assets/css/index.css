@@ -41,6 +41,7 @@ html,
 }
 .site-content {
     flex-grow: 1;
+    background: linear-gradient(to top, #fafafa, #ffffff);
 }
 
 .site-main {
@@ -370,7 +371,7 @@ ul.tags-conainer {
 .index-page {
     position: relative;
     height: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     padding-top: 60px;
 }
 @media (max-width: 768px) {
@@ -1351,9 +1352,10 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .read-more-wrap {
     width: 100%;
-    padding: 4vmin 0;
+    padding: 64px 4vmin;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     background: #0a0b0c;
+    border-radius: 32px 32px 0 0;
 }
 @media (max-width: 768px) {
     .read-more-wrap {
@@ -1602,7 +1604,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .site-footer {
     position: relative;
     margin: 0;
-    padding: 40px 4vmin 140px;
+    padding: 40px 4vmin 40px;
     color: #fff;
     background: #0a0b0c;
 }
@@ -1629,14 +1631,19 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
-
 .site-footer-nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 0 20px;
+    margin: 0 0 0px;
     padding: 0;
     list-style: none;
+}
+
+@media (max-width: 800px) {
+    .site-footer-nav ul {
+        margin: 0 0 0px;
+    }
 }
 
 .site-footer-nav li {
@@ -2046,9 +2053,9 @@ the right place. Onward!
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 4vmin 0;
-    padding: 2vmin 0;
-    border-top: 1px solid #ebebeb;
+    margin: 48px 0 0 0;
+    padding: 28px 0 0 0;
+    border-top: 1px solid #d4d4d8;
 }
 
 .pagination a {
@@ -2057,7 +2064,7 @@ the right place. Onward!
     border: 1px solid var(--ghost-accent-color);
     color: var(--ghost-accent-color);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: all 0.2s ease;
 }
 
@@ -2067,16 +2074,11 @@ the right place. Onward!
 }
 
 .pagination .page-number {
-    color: #738a94;
+    color: #3f3f46;
 }
 
 @media (max-width: 500px) {
-    .pagination {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .pagination a {
+    * .pagination a {
         margin-bottom: 10px;
     }
 

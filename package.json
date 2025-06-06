@@ -119,21 +119,6 @@
                 "default": "Wide",
                 "group": "post"
             },
-            "email_signup_for_logged_out_visitors": {
-                "type": "select",
-                "options": [
-                    "Footer",
-                    "Bottom of post",
-                    "None"
-                ],
-                "default": "Footer",
-                "group": "post"
-            },
-            "email_signup_text": {
-                "type": "text",
-                "default": "Sign up for more like this.",
-                "group": "post"
-            },
             "show_recent_posts": {
                 "type": "boolean",
                 "default": true,

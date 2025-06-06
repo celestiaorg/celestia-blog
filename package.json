@@ -1,8 +1,8 @@
 {
-    "name": "ghost-celestia-theme-v309",
+    "name": "ghost-celestia-theme-v310",
     "description": "The official Ghost theme for blog.celestia.org",
     "demo": "https://starter.ghost.io",
-    "version": "3.0.9",
+    "version": "3.1.0",
     "engines": {
         "ghost": ">=5.0.0"
     },

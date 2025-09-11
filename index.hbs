@@ -10,7 +10,7 @@
                 <div class="post-feed-featured">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                            {{#get "posts" filter="featured:true" limit="all"}}
+                            {{#get "posts" filter="featured:true" limit="50"}}
                                 {{#foreach posts}}
                                     <div class="swiper-slide">
                                         {{> "post-card-featured"}}

@@ -1,0 +1,55 @@
+/* Aspect ratio utility using padding-top pattern (16:9) */
+.ar-16x9 {
+    position: relative;
+}
+.ar-16x9::before {
+    display: block;
+    content: "";
+    width: 100%;
+    /* (9 / 16) * 100% = 56.25% */
+    padding-top: 56.25%;
+}
+.ar-16x9 > .ar-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* Make media fill the box */
+.ar-16x9 img,
+.ar-16x9 video,
+.ar-16x9 iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* Card integrations */
+.post-card-image-link .ar-16x9 {
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Neutralize any prior pseudo-aspect locks on the link */
+.post-card-large .post-card-image-link::after {
+    content: none;
+    padding-bottom: 0;
+}
+@media (min-width: 1001px) {
+    .post-card-large .post-card-image-link {
+        height: auto;
+    }
+}
+
+/* Article hero integrations */
+.article-image .ar-16x9 {
+    border-radius: 20px;
+    overflow: hidden;
+}
+@media (max-width: 600px) {
+    .article-image .ar-16x9 {
+        border-radius: 10px;
+    }
+}

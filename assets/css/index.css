@@ -60,7 +60,7 @@ html,
 
 .gh-postfeed {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(21.875rem, 100%), 1fr));
     gap: 4.8vmin 4vmin;
     padding: 8vmin 0;
 }
@@ -71,7 +71,7 @@ html,
 
 .gh-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ html,
 
 .gh-card-image {
     width: 100%;
-    /* max-height: 700px; */
+    /* max-height: 43.75rem; */
     object-fit: cover;
     margin-bottom: 4vmin;
     aspect-ratio: 1 / 1;
@@ -101,31 +101,31 @@ html,
 
 .gh-card-meta {
     display: block;
-    margin: 0 0 1rem;
-    font-size: 1.4rem;
+    margin: 0 0 16px;
+    font-size: 22.4px;
     line-height: 1.2em;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.0313rem;
     text-transform: uppercase;
     opacity: 0.8;
 }
 
 .gh-card-content {
-    max-width: 720px;
+    max-width: 45rem;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 25.6px;
 }
 
 .gh-card-content p {
-    margin: 1.2rem 0;
+    margin: 19.2px 0;
     padding: 0 3vmin;
 }
 
 .gh-card-content > strong {
     display: inline-block;
-    padding: 1px 0;
+    padding: 0.0625rem 0;
     font-weight: 600;
-    box-shadow: 0 -1px 0 0 inset currentColor;
+    box-shadow: 0 -0.0625rem 0 0 inset currentColor;
     opacity: 0.75;
 }
 
@@ -143,7 +143,7 @@ html,
 }
 
 .gh-page-head > p {
-    max-width: 720px;
+    max-width: 45rem;
     margin: 0.3em auto 0;
     padding: 0 6vmin;
     font-size: 1.3em;
@@ -151,9 +151,9 @@ html,
     opacity: 0.5;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .gh-page-head > p {
-        font-size: 1.6rem;
+        font-size: 25.6px;
     }
 }
 
@@ -168,15 +168,15 @@ html,
 
 .gh-post-meta {
     display: block;
-    margin: 0 0 1rem;
-    font-size: 1.4rem;
-    letter-spacing: 0.5px;
+    margin: 0 0 16px;
+    font-size: 22.4px;
+    letter-spacing: 0.0313rem;
     text-transform: uppercase;
     opacity: 0.8;
 }
 
 .gh-excerpt {
-    margin: 1rem 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 .gh-feature-image {
@@ -191,7 +191,7 @@ html,
 }
 
 .gh-post-footer {
-    margin: 2rem 0;
+    margin: 32px 0;
 }
 
 /* Author Archive
@@ -229,14 +229,14 @@ html,
     content: "";
     margin: 0 1.25vmin 0 0;
     height: 1em;
-    width: 1px;
+    width: 0.0625rem;
     background: rgba(0, 0, 0, 0.3);
     transform: rotate(20deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .gh-author-meta {
-        font-size: 1.6rem;
+        font-size: 25.6px;
     }
 }
 
@@ -260,7 +260,7 @@ html,
 /* Centered content container blocks */
 .inner {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 75rem;
     width: 100%;
     z-index: 0;
     position: relative;
@@ -303,22 +303,22 @@ ul.tags-conainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 250px 60px 127px 60px;
-    min-height: 200px;
+    padding: 15.625rem 3.75rem 7.9375rem 3.75rem;
+    min-height: 12.5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 400;
     color: var(--color-darkgrey);
     background: transparent !important;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
     .site-header-content {
         padding: 20vw 0 16vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .site-header-content {
         padding: 32vw 0 16vw;
     }
@@ -336,34 +336,34 @@ ul.tags-conainer {
 }
 
 .site-title {
-    font-size: 110px;
+    font-size: 6.875rem;
     font-weight: 600;
     z-index: 10;
     margin: 0;
     padding: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .site-title {
         font-size: 14.48vw;
         font-weight: 700;
     }
 }
 .site-logo {
-    max-height: 55px;
+    max-height: 3.4375rem;
 }
 
 .site-header-content p {
     z-index: 10;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 0 auto;
     line-height: 1.2em;
     opacity: 0.8;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .site-header-content p {
         max-width: 80vmin;
-        font-size: 1.8rem;
+        font-size: 28.8px;
     }
 }
 
@@ -372,13 +372,13 @@ ul.tags-conainer {
 .index-page {
     position: relative;
     height: 100%;
-    padding-bottom: 80px;
-    padding-top: 60px;
+    padding-bottom: 5rem;
+    padding-top: 3.75rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .index-page {
-        padding-bottom: 80px;
-        padding-top: 44px;
+        padding-bottom: 5rem;
+        padding-top: 2.75rem;
     }
 }
 
@@ -395,14 +395,14 @@ ul.tags-conainer {
     background-size: 100%;
 } */
 
-@media (max-width: 2000px) {
+@media (max-width: 125rem) {
     .viewport:before {
         height: 100%;
         top: 0;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
     /* Assuming xl breakpoint */
     .viewport:before {
         background-size: 130%;
@@ -410,7 +410,7 @@ ul.tags-conainer {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
     /* Assuming lg breakpoint */
     .viewport:before {
         background-size: 150%;
@@ -418,7 +418,7 @@ ul.tags-conainer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     /* Assuming md breakpoint */
     .viewport:before {
         top: -5vw;
@@ -427,7 +427,7 @@ ul.tags-conainer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     #gh-head .gh-head-menu {
         font-size: 6vmin;
     }
@@ -451,29 +451,29 @@ ul.tags-conainer {
 .post-feed {
     position: relative;
     display: grid;
-    grid-gap: 34px;
+    grid-gap: 2.125rem;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .post-featured-title {
     color: #000;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
-    letter-spacing: 0.2px;
-    margin-bottom: 32px;
-    margin-top: 0px;
+    letter-spacing: 0.0125rem;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-featured-title {
-        font-size: 22px;
-        margin-bottom: 24px;
+        font-size: 1.375rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 .post-feed-featured {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 .post-feed-featured .post-card {
@@ -485,81 +485,81 @@ ul.tags-conainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .post-feed-featured .post-card-header-container {
-    margin-bottom: 14px;
+    margin-bottom: 0.875rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-feed-featured .post-card-header-container {
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-card-header-container {
-        margin-bottom: 14px;
+        margin-bottom: 0.875rem;
     }
 }
 
 .post-feed-featured h2.post-card-title {
-    font-size: 52px;
+    font-size: 3.25rem;
     line-height: 1em;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 .post-feed-featured .post-card-primary-tag {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 .post-feed-featured .post-card-byline-date {
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
     font-weight: 600;
     line-height: 1.5em;
 }
 
 .post-feed-featured .post-card-content {
-    padding: 0px;
+    padding: 0rem;
 }
-@media (min-width: 1320px) {
+@media (min-width: 82.5rem) {
     .post-feed-featured .post-card-content {
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-feed-featured h2.post-card-title {
-        font-size: 28px;
+        font-size: 1.75rem;
         line-height: 1.1em;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     .post-feed-featured .post-card-primary-tag {
-        font-size: 14px;
+        font-size: 0.875rem;
         margin-bottom: 0;
     }
     .post-feed-featured .post-card-byline-date {
-        font-size: 1.4rem;
+        font-size: 22.4px;
         font-weight: 400;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-feed-featured {
-        margin-bottom: 28px;
+        margin-bottom: 1.75rem;
     }
 }
-@media (max-width: 1320px) {
+@media (max-width: 82.5rem) {
     .post-feed-featured .post-card-content {
         padding: 0;
     }
 }
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .post-feed-featured .post-card-content {
-        padding: 16px 0px;
+        padding: 1rem 0rem;
     }
 }
 
@@ -567,7 +567,7 @@ ul.tags-conainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
     width: 100%;
     overflow-x: scroll;
     scrollbar-width: none; /* For Firefox */
@@ -584,10 +584,10 @@ ul.tags-conainer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 4px 0;
+    padding: 0.25rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .filter-container-inner {
         display: flex;
         align-items: center;
@@ -598,50 +598,50 @@ ul.tags-conainer {
 button.gh-search-icon {
     color: inherit;
     background-color: #fff;
-    border-radius: 8px;
-    padding: 15px 22px;
-    border: 1px solid #ebebeb;
+    border-radius: 0.5rem;
+    padding: 0.9375rem 1.375rem;
+    border: 0.0625rem solid #ebebeb;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
     transition: all 150ms ease-in-out;
 }
 button.gh-search-icon:hover {
     background-color: rgb(249, 249, 249);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     button.gh-search-icon {
-        padding: 10px 10px;
-        margin-left: 16px;
-        height: 40px;
-        width: 40px;
+        padding: 0.625rem 0.625rem;
+        margin-left: 1rem;
+        height: 2.5rem;
+        width: 2.5rem;
     }
 }
 
 .tags-conainer .tag {
-    padding: 15px 22px;
+    padding: 0.9375rem 1.375rem;
     font-weight: 500;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .tags-conainer .tag {
-        margin-right: 8px;
-        padding: 8px 10px;
+        margin-right: 0.5rem;
+        padding: 0.5rem 0.625rem;
     }
 }
 
 .tags-conainer .tag-item {
     color: inherit;
     background-color: #ffffffb0;
-    border-radius: 8px;
-    border: 1px solid #ebebeb;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #ebebeb;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    margin-right: 16px;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+    margin-right: 1rem;
     user-select: none; /* Make text unselectable */
     transition: all 150ms ease-in-out;
 }
@@ -649,33 +649,33 @@ button.gh-search-icon:hover {
     background-color: rgb(249, 249, 249);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .tags-conainer .tag-item {
-        margin-right: 8px;
-        font-size: 14px;
+        margin-right: 0.5rem;
+        font-size: 0.875rem;
     }
 }
 
 .swiper {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 .swiper-button-container {
-    padding-top: 32px;
+    padding-top: 2rem;
     width: fit-content;
-    gap: 16px;
+    gap: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 82.5rem) {
     .site-header-content .swiper-button-container {
-        padding-top: 16px;
+        padding-top: 1rem;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .swiper-button-container {
         display: none;
     }
@@ -685,10 +685,10 @@ button.gh-search-icon:hover {
     position: relative;
     color: #000;
     background-color: rgb(255, 255, 255);
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    border: 1px solid #ebebeb;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+    border: 0.0625rem solid #ebebeb;
     border-radius: 50%;
     transition: all 150ms ease-in-out;
     left: unset;
@@ -699,17 +699,17 @@ button.gh-search-icon:hover {
     background-color: rgb(249, 249, 249);
 }
 .swiper-button-prev::after {
-    transform: translateX(-2px);
-    font-size: 28px;
+    transform: translateX(-0.125rem);
+    font-size: 1.75rem;
 }
 .swiper-button-next {
     position: relative;
     color: #000;
     background-color: rgb(255, 255, 255);
-    width: 80px;
-    height: 80px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    border: 1px solid #ebebeb;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+    border: 0.0625rem solid #ebebeb;
     border-radius: 50%;
     transition: all 150ms ease-in-out;
     left: unset;
@@ -720,8 +720,8 @@ button.gh-search-icon:hover {
     background-color: rgb(249, 249, 249);
 }
 .swiper-button-next::after {
-    transform: translateX(2px);
-    font-size: 28px;
+    transform: translateX(0.125rem);
+    font-size: 1.75rem;
 }
 
 .swiper-slide {
@@ -739,38 +739,38 @@ button.gh-search-icon:hover {
 
 .post-feed.list {
     row-gap: 6vmin;
-    max-width: 940px;
+    max-width: 58.75rem;
     margin: 2vmin auto 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .post-feed {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .post-feed {
         grid-template-columns: 1fr;
-        grid-gap: 40px;
+        grid-gap: 2.5rem;
     }
 }
 
 .post-card {
     position: relative;
-    flex: 1 1 301px;
+    flex: 1 1 18.8125rem;
     display: flex;
     flex-direction: column;
-    min-height: 220px;
+    min-height: 13.75rem;
     background-size: cover;
     word-break: break-word;
-    border: 1px solid #ebebeb;
+    border: 0.0625rem solid #ebebeb;
     background-color: #fff;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+    border-radius: 0.625rem;
     transition: all 150ms ease-in-out;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .post-card {
         min-height: auto;
     }
@@ -780,12 +780,12 @@ button.gh-search-icon:hover {
     position: relative;
     display: block;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .post-card-image {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background: var(--color-lightgrey) no-repeat center center;
     object-fit: cover;
 }
@@ -798,43 +798,43 @@ button.gh-search-icon:hover {
 }
 
 .post-card-readmore {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .post-card-readmore a {
     display: inline-flex;
     align-items: center;
-    padding: 10px 0px;
-    font-size: 16px;
+    padding: 0.625rem 0rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     transition: all 0.3s ease;
 }
 
 .post-card-readmore a svg {
-    margin-left: 10px;
+    margin-left: 0.625rem;
     transition: transform 0.3s ease;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .post-card-readmore a:hover svg {
-    transform: translateX(10px);
+    transform: translateX(0.625rem);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-card-content {
-        padding: 20px 16px;
+        padding: 1.25rem 1rem;
     }
 
     .post-card-readmore {
-        margin-top: 15px;
+        margin-top: 0.9375rem;
     }
 
     .post-card-readmore a {
-        padding: 8px 0px;
-        font-size: 13px;
+        padding: 0.5rem 0rem;
+        font-size: 0.8125rem;
     }
 }
 
@@ -852,15 +852,15 @@ button.gh-search-icon:hover {
 
 .post-card-primary-tag {
     color: var(--ghost-accent-color);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 .post-card-title {
     margin: 0 0 0.4em;
-    font-size: 2.4rem;
+    font-size: 38.4px;
     transition: color 0.2s ease-in-out;
 }
 
@@ -877,12 +877,12 @@ button.gh-search-icon:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-card-content {
-        padding: 16px 16px;
+        padding: 1rem 1rem;
     }
 }
 
@@ -891,7 +891,7 @@ button.gh-search-icon:hover {
     max-width: 56em;
     color: #2a2a2a;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .post-card-excerpt p {
@@ -928,7 +928,7 @@ button.gh-search-icon:hover {
 .author-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 0 4px;
+    margin: 0 0 0 0.25rem;
     padding: 0;
     list-style: none;
 }
@@ -943,20 +943,20 @@ button.gh-search-icon:hover {
 .static-avatar {
     display: block;
     overflow: hidden;
-    margin: 0 0 0 -6px;
-    width: 36px;
-    height: 36px;
+    margin: 0 0 0 -0.375rem;
+    width: 2.25rem;
+    height: 2.25rem;
     border-radius: 100%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 0.0625rem rgba(255, 255, 255, 0.2);
 }
 
 .post-card-byline-content {
     flex: 1 1 50%;
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 8px;
+    margin: 0 0 0 0.5rem;
     color: #90a2aa;
-    font-size: 1.4rem;
+    font-size: 22.4px;
     line-height: 1.2em;
     font-weight: 400;
 }
@@ -971,28 +971,28 @@ button.gh-search-icon:hover {
 }
 
 .post-card-byline-date {
-    font-size: 1.4rem;
+    font-size: 22.4px;
     line-height: 1.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .post-card-byline-date {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
 .post-card-byline-date .bull {
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 0.125rem;
     opacity: 0.6;
 }
 
 .single-author-byline {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
     color: #373c44;
-    font-size: 1.3rem;
+    font-size: 20.8px;
     line-height: 1.4em;
     font-weight: 600;
 }
@@ -1003,7 +1003,7 @@ button.gh-search-icon:hover {
 }
 
 .single-author .static-avatar {
-    margin-left: -2px;
+    margin-left: -0.125rem;
 }
 
 .single-author-name {
@@ -1022,7 +1022,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     background-color: transparent;
 }
 
-@media (min-width: 701px) {
+@media (min-width: 43.8125rem) {
     .post-feed.list .post-card-large {
         grid-column: 1 / span 1;
         display: grid;
@@ -1042,17 +1042,17 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-feed.list .post-card-large .post-card-content {
         justify-content: flex-start;
-        margin-top: -6px;
+        margin-top: -0.375rem;
     }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 62.5625rem) {
     .post-card-large {
         grid-column: 1 / span 3;
         display: grid;
-        grid-gap: 42px;
+        grid-gap: 2.625rem;
         grid-template-columns: 1fr 1fr;
-        min-height: 280px;
+        min-height: 17.5rem;
         border-top: 0;
     }
 
@@ -1064,7 +1064,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         position: relative;
         grid-column: 1 / span 1;
         margin-bottom: 0;
-        height: 380px;
+        height: 23.75rem;
     }
 
     .post-feed.list .post-card-large .post-card-image-link {
@@ -1093,27 +1093,27 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-card-large .post-card-title {
         margin-top: 0;
-        font-size: 3.2rem;
+        font-size: 51.2px;
     }
 
     .post-feed.list .post-card-large .post-card-title {
-        font-size: 2.4rem;
+        font-size: 38.4px;
     }
 
     .post-card-large .post-card-excerpt p {
-        font-size: 1.7rem;
+        font-size: 27.2px;
         line-height: 1.55em;
         -webkit-line-clamp: 8;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .post-card-title {
-        font-size: 2.3rem;
+        font-size: 36.8px;
     }
 
     .post-card-excerpt {
-        font-size: 1.6rem;
+        font-size: 25.6px;
     }
 }
 
@@ -1121,19 +1121,19 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* ---------------------------------------------------------- */
 
 .article {
-    padding: 100px 60px 127px;
+    padding: 6.25rem 3.75rem 7.9375rem;
     word-break: break-word;
 }
 
 .article-header {
-    padding: 0 0 80px 0;
+    padding: 0 0 5rem 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .article {
-        padding: 26px 0 60px;
+        padding: 1.625rem 0 3.75rem;
     }
     .article-header {
-        padding: 0 0 48px 0;
+        padding: 0 0 3rem 0;
     }
 }
 
@@ -1141,16 +1141,16 @@ make sure this only happens on large viewports / desktop-ish devices.
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 0.5rem;
+    margin: 0 0 8px;
     color: var(--color-midgrey);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.4em;
     letter-spacing: 0.02em;
     font-weight: 600;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .article-tag {
-        margin: 0 0 1rem;
+        margin: 0 0 16px;
     }
 }
 
@@ -1167,24 +1167,32 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .article-excerpt {
-    margin: 0 0 1rem;
-    font-size: 2rem;
+    margin: 0 0 16px;
+    font-size: 32px;
     line-height: 1.4em;
     opacity: 0.6;
 }
 
 .gh-canvas .article-image {
-    grid-column: wide-start / wide-end;
+    grid-column: 1 / -1;
     width: 100%;
-    margin: 48px 0 0;
+    max-width: 62.5rem;
+    margin: 3rem auto 0;
+    justify-self: center;
 }
 
 .image-full .article-image {
     grid-column: full-start / full-end;
+    max-width: none;
+    margin: 3rem 0 0;
+    justify-self: stretch;
 }
 
 .image-small .article-image {
     grid-column: main-start / main-end;
+    max-width: 45rem;
+    margin: 3rem auto 0;
+    justify-self: center;
 }
 
 .gh-canvas .article-image img {
@@ -1192,18 +1200,27 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .article-excerpt {
-        font-size: 1.8rem;
+        font-size: 28.8px;
     }
     .gh-canvas .article-image img {
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
     .gh-canvas .article-image {
-        margin: 40px 0 0;
+        margin: 2.5rem auto 0;
+        max-width: 95%;
+    }
+    .image-full .article-image {
+        margin: 2.5rem 0 0;
+        max-width: none;
+    }
+    .image-small .article-image {
+        margin: 2.5rem auto 0;
+        max-width: 95%;
     }
 }
 
@@ -1213,7 +1230,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .article-byline {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0 0;
+    margin: 0.625rem 0 0;
 }
 
 .article-byline-content {
@@ -1224,57 +1241,57 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .article-byline-content .author-list {
     justify-content: flex-start;
-    padding: 0 12px 0 0;
+    padding: 0 0.75rem 0 0;
 }
 
 .article-byline-meta {
     color: var(--color-midgrey);
-    font-size: 1.4rem;
+    font-size: 22.4px;
     line-height: 1.2em;
 }
 
 .article-byline-meta h4 {
-    margin: 0 0 3px;
-    font-size: 1.6rem;
+    margin: 0 0 0.1875rem;
+    font-size: 25.6px;
 }
 
 .article-byline-meta .bull {
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 0.125rem;
     opacity: 0.6;
 }
 
 .author-avatar {
     display: block;
     overflow: hidden;
-    margin: 0 -4px;
-    width: 50px;
-    height: 50px;
-    border: #fff 2px solid;
+    margin: 0 -0.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: #fff 0.125rem solid;
     border-radius: 100%;
     transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 700ms;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .author-avatar {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
     }
 }
 
 .basic-info .avatar-wrapper {
     position: relative;
     margin: 0;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     border: none;
     background: rgba(229, 239, 245, 0.1);
 }
 
 .basic-info .avatar-wrapper svg {
     margin: 0;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     opacity: 0.15;
 }
 
@@ -1291,9 +1308,9 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: #fff;
     text-align: center;
     background: #0a0b0c;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .footer-cta {
         padding: 12vmin 4vmin 12vmin;
     }
@@ -1306,17 +1323,17 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 /* Increases the default h2 size by 15%, for small and large screens */
 .footer-cta h2 {
-    margin: 0 0 30px;
-    font-size: 3.2rem;
+    margin: 0 0 1.875rem;
+    font-size: 51.2px;
 }
 
 .footer-cta.cta-alt h2 {
     color: var(--color-darkgrey);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
     .footer-cta h2 {
-        font-size: 2.65rem;
+        font-size: 42.4px;
     }
 }
 
@@ -1326,26 +1343,26 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 600px;
-    padding: 5px 5px 5px 15px;
-    font-size: 1.8rem;
+    max-width: 37.5rem;
+    padding: 0.3125rem 0.3125rem 0.3125rem 0.9375rem;
+    font-size: 28.8px;
     color: var(--color-midgrey);
     background: #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .footer-cta.cta-alt .footer-cta-button {
-    border: 1px solid var(--color-lightgrey);
+    border: 0.0625rem solid var(--color-lightgrey);
 }
 
 .footer-cta-button span {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     background: var(--ghost-accent-color);
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 /* Read more
@@ -1353,12 +1370,12 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .read-more-wrap {
     width: 100%;
-    padding: 64px 4vmin;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4rem 4vmin;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
     background: #0a0b0c;
-    border-radius: 32px 32px 0 0;
+    border-radius: 2rem 2rem 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .read-more-wrap {
         padding: 9vmin 4vmin 8vmin;
     }
@@ -1387,7 +1404,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: #fff;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5rem) {
     .read-more {
         grid-template-columns: 1fr 1fr;
     }
@@ -1396,7 +1413,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .read-more {
         grid-template-columns: 1fr;
     }
@@ -1409,11 +1426,11 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* ---------------------------------------------------------- */
 
 .author-template .site-content {
-    padding: 200px 0px 127px;
+    padding: 12.5rem 0rem 7.9375rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
     .author-template .site-content {
-        padding: 112px 0 80px;
+        padding: 7rem 0 5rem;
     }
 }
 
@@ -1421,7 +1438,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     position: relative;
     height: 100%;
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    grid-template-columns: 12.5rem 1fr 1fr;
     grid-gap: 4vmin;
 }
 
@@ -1434,23 +1451,23 @@ make sure this only happens on large viewports / desktop-ish devices.
     height: auto;
     position: sticky;
     top: 4vmin;
-    font-size: 1.4rem;
+    font-size: 22.4px;
     line-height: 1.4em;
 }
 
 .author-profile-pic {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 9.375rem;
+    height: 9.375rem;
     object-fit: cover;
-    margin: 0 0 2rem;
+    margin: 0 0 32px;
     background: #d6e2e9;
     border-radius: 50%;
 }
 
 .author-profile h1 {
     margin: 0 0 0.3em;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 .author-profile p {
@@ -1465,8 +1482,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .author-profile-social-link {
     display: block;
-    padding: 0 0 5px;
-    font-size: 1.3rem;
+    padding: 0 0 0.3125rem;
+    font-size: 20.8px;
     color: #6c7a86;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1478,13 +1495,13 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: var(--color-darkgrey);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
     .author-template .posts .post-feed {
         grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
     .author-template .posts {
         grid-template-columns: 1fr;
         grid-gap: 0;
@@ -1516,21 +1533,21 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .tags-title-container {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
 }
 
 .tags-title-container .post-featured-title {
     color: black;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .tags-title-container .post-card-primary-tag {
     color: var(--ghost-accent-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 /* Error Template
@@ -1550,23 +1567,23 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: var(--ghost-accent-color);
     font-size: 12vw;
     line-height: 1em;
-    letter-spacing: -5px;
+    letter-spacing: -0.3125rem;
 }
 
 .error-description {
     margin: 0;
     color: var(--color-midgrey);
-    font-size: 3.2rem;
+    font-size: 51.2px;
     line-height: 1.3em;
     font-weight: 400;
 }
 
 .error-link {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
 }
 
-@media (min-width: 940px) {
+@media (min-width: 58.75rem) {
     .error-content .post-card {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -1574,23 +1591,23 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .error-content {
         padding-top: 24vw;
     }
     .error-code {
-        font-size: 11.2rem;
+        font-size: 179.2px;
     }
     .error-message {
         padding-bottom: 16vw;
     }
     .error-description {
-        margin: 5px 0 0 0;
-        font-size: 1.8rem;
+        margin: 0.3125rem 0 0 0;
+        font-size: 28.8px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .error-content {
         padding-top: 28vw;
     }
@@ -1605,17 +1622,17 @@ make sure this only happens on large viewports / desktop-ish devices.
 .site-footer {
     position: relative;
     margin: 0;
-    padding: 40px 4vmin 40px;
+    padding: 2.5rem 4vmin 2.5rem;
     color: #fff;
     background: #0a0b0c;
 }
 
 .site-footer .inner {
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 2.5rem;
     grid-template-columns: auto 1fr auto;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 1.3rem;
+    font-size: 20.8px;
 }
 
 .site-footer .copyright a {
@@ -1636,14 +1653,14 @@ make sure this only happens on large viewports / desktop-ish devices.
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 0 0px;
+    margin: 0 0 0rem;
     padding: 0;
     list-style: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .site-footer-nav ul {
-        margin: 0 0 0px;
+        margin: 0 0 0rem;
     }
 }
 
@@ -1659,22 +1676,22 @@ make sure this only happens on large viewports / desktop-ish devices.
     position: relative;
     display: inline-flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .site-footer-nav li:not(:first-child) a:before {
     content: "";
     display: block;
-    width: 2px;
-    height: 2px;
-    margin: 0 10px 0 0;
+    width: 0.125rem;
+    height: 0.125rem;
+    margin: 0 0.625rem 0 0;
     background: #fff;
     border-radius: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
     .site-footer .inner {
-        max-width: 500px;
+        max-width: 31.25rem;
         grid-template-columns: 1fr;
         grid-gap: 0;
         text-align: center;
@@ -1682,7 +1699,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     .site-footer .copyright,
     .site-footer .copyright a {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 }
 
@@ -1811,7 +1828,7 @@ html.dark-mode hr {
 
 html.dark-mode .gh-content hr:after {
     background: #191b1f;
-    box-shadow: var(--color-darkmode) 0 0 0 5px;
+    box-shadow: var(--color-darkmode) 0 0 0 0.3125rem;
 }
 
 html.dark-mode figcaption {
@@ -1841,7 +1858,7 @@ html.dark-mode .gh-content table th {
 
 html.dark-mode .gh-content table th,
 html.dark-mode .gh-content table td {
-    border: #1a1c1d 1px solid;
+    border: #1a1c1d 0.0625rem solid;
 }
 
 html.dark-mode .gh-content input {
@@ -1978,7 +1995,7 @@ html.dark-mode .kg-header-card h3.kg-header-card-subheader {
 
     html.auto-color .gh-content hr:after {
         background: #1a1c1d;
-        box-shadow: #151719 0 0 0 5px;
+        box-shadow: #151719 0 0 0 0.3125rem;
     }
 
     html.auto-color figcaption {
@@ -2008,7 +2025,7 @@ html.dark-mode .kg-header-card h3.kg-header-card-subheader {
 
     html.auto-color .gh-content table th,
     html.auto-color .gh-content table td {
-        border: #191b1c 1px solid;
+        border: #191b1c 0.0625rem solid;
     }
 
     html.auto-color .gh-content input {
@@ -2054,18 +2071,18 @@ the right place. Onward!
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 48px 0 0 0;
-    padding: 28px 0 0 0;
-    border-top: 1px solid #d4d4d8;
+    margin: 3rem 0 0 0;
+    padding: 1.75rem 0 0 0;
+    border-top: 0.0625rem solid #d4d4d8;
 }
 
 .pagination a {
     display: inline-block;
-    padding: 10px 15px;
-    border: 1px solid var(--ghost-accent-color);
+    padding: 0.625rem 0.9375rem;
+    border: 0.0625rem solid var(--ghost-accent-color);
     color: var(--ghost-accent-color);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.2s ease;
 }
 
@@ -2078,12 +2095,12 @@ the right place. Onward!
     color: #3f3f46;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     * .pagination a {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 
     .pagination .page-number {
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 }
